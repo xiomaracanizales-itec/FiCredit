@@ -23,7 +23,7 @@ export const navigationData: MainNavTab[] =[
     {
         id: "personas",
         label: "Personas",
-        href: "/personas",
+        href: "/",
         subCategories: [
             {
                 id: "cuentas-personas",

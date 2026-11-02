@@ -4,13 +4,14 @@ import Image from "next/image"
 
 // props que acepta el hero
 interface HeroSectionProps {
-    title: string;
-    description?: string;
+    title: React.ReactNode;
+    description?: React.ReactNode;
     ctaText?: string;
     ctaHref?: string;
     backgroundImage?: string;
     badge?: string;
     isHome?: boolean;
+    flatBg?: boolean;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
@@ -20,7 +21,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     ctaHref,
     backgroundImage,
     badge,
-    isHome = false
+    isHome = false,
+    flatBg = false,
 }) => {
     return (
         <section
@@ -36,14 +38,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="absolute inset-0 z-0">
                     <Image 
                         src={backgroundImage}
-                        alt={title}
+                        alt={typeof title === "string" ? title : "FiCredit"}
                         fill
                         priority
                         className="object-cover object-center"
                     />
-                    {/* capa con opacidad */}
+                    {/* capa con opacidad sobre la imagen */}
                     <div className="absolute inset-0 bg-primary/65 z-10" />
                 </div>
+            ) : flatBg ? (
+                /* fondo azul plano */
+                <div className="absolute inset-0 bg-primary z-0"/>
             ) : (
                 /* degradado si no hay imagen */
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-[#003875] to-[#002654] z-0" />
