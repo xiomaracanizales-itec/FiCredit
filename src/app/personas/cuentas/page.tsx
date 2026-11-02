@@ -17,7 +17,7 @@ const accountsData: ProductCardItem[] = [
             "Tasas de interés competitivas garantizadas.",
             "Monto mínimo de apertura accesible.",
         ],
-        ctaText: "Ver Detalles del Producto",
+        ctaText: "Ver Detalles",
         ctaHref: "/personas/cuentas/plazo-fijo",
     },
     {
@@ -29,7 +29,7 @@ const accountsData: ProductCardItem[] = [
             "Generación de intereses sobre saldos diarios.",
             "Sin cargos ocultos por manejo de cuenta.",
         ],
-        ctaText: "Ver Detalles del Producto",
+        ctaText: "Ver Detalles",
         ctaHref: "/personas/cuentas/ahorro-corriente",
     }
 ]
@@ -60,7 +60,6 @@ export default function CuentasPersonasPage() {
                 <Breadcrumbs 
                     items = {[
                         { label: "Inicio", href: "/" },
-                        { label: "Personas", href: "/" },
                         { label: "Cuentas e Inversión" },
                     ]}
                 />

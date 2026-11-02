@@ -57,7 +57,7 @@ export const ProductCardsGrid: React.FC<ProductCardsGridProps> = ({
                                     {product.description}
                                 </p>
                                 <h4 className="font-heading text-sm font-bold text-night-blue mb-3">
-                                    {product.benefits || "Beneficios"}
+                                    Beneficios
                                 </h4>
                                 <ul className="space-y-2.5 mb-8">
                                     {product.benefits.map((benefit, bIdx) => (
@@ -76,10 +76,10 @@ export const ProductCardsGrid: React.FC<ProductCardsGridProps> = ({
                             <div className="pt-2">
                                 <Link
                                     href={product.ctaHref}
-                                    className="inline-flex items-center justify-center gap-2 bg-accent-yellow hover:bg-amber-400 text-night-blue
+                                    className="inline-flex items-center justify-center gap-2 bg-accent-yellow border-accent-yellow text-night-blue
                                         font-heading font-semibold text-xs md:text-sm px-5 py-2.5 rounded-card transition-all duration-200 shadow-sm
-                                        hover:shadow"
-                                >
+                                        border-2 hover:bg-transparent hover:shadow"
+                                >    
                                     <span>{product.ctaText || "Ver Detalles"}</span>
                                     <ArrowRight className="w-3.5 h-3.5" />
                                 </Link>
