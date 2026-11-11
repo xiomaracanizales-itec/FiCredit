@@ -19,7 +19,7 @@ export const Footer = () => {
                             <ul className="space-y-2.5 font-body text-[16px] text-night-blue/80">
                                 <li>
                                     <Link 
-                                        href="/legales/informacion-financiera"
+                                        href="/acerca-de/informacion-financiera"
                                         className="hover:text-primary transition-colors"
                                     >
                                         Información Financiera
@@ -44,7 +44,7 @@ export const Footer = () => {
                             <ul className="space-y-2.5 font-body text-[16px] text-night-blue/80">
                                 <li>
                                     <Link 
-                                        href="/quienes-somos/conoce-ficredit"
+                                        href="/acerca-de/quienes-somos"
                                         className="hover:text-primary transition-colors"
                                     >
                                         Conoce FiCredit
@@ -52,7 +52,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <Link 
-                                        href="/quienes-somos/gobierno-corporativo"
+                                        href="/acerca-de/gobierno-corporativo"
                                         className="hover:text-primary transition-colors"
                                     >
                                         Gobierno Corporativo
@@ -60,7 +60,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <Link 
-                                        href="/quienes-somos/transparencia-cumplimiento"
+                                        href="/acerca-de/transparencia"
                                         className="hover:text-primary transition-colors"
                                     >
                                         Transparencia y Cumplimiento

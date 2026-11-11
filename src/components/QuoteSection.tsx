@@ -15,12 +15,12 @@ export const QuoteSection: React.FC<QuoteSectionProps> = ({
             
             <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="relative inline-block mb-8">
-                    <blockquote className="font-heading text-[22px] leading-[34px] md:text-[32px] md:leading-[46px] font-medium text-white tracking-tight">
-                        <span className="text-blue-300/40 text-4xl md:text-6xl font-serif mr-2 select-none">
+                    <blockquote className="font-heading text-[20px] leading-[32px] md:text-[28px] md:leading-[44px] lg:text-[32px] lg:leading-[48px] font-medium text-white tracking-tight">
+                        <span className="inline-block text-blue-300/40 text-3xl md:text-5xl font-serif leading-none align-top -translate-y-1 md:-transtalte-y-2 mr-2 select-none">
                             “
                         </span>
                             {quote}
-                        <span className="text-blue-300/40 text-4xl md:text-6xl font-serif ml-2 select-none">
+                        <span className="inline-block text-blue-300/40 text-3xl md:text-5xl font-serif leading-none align-top -translate-y-1 md:-transtalte-y-2 ml-2 select-none">
                             ”
                         </span>
                     </blockquote>

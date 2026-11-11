@@ -1,10 +1,16 @@
 import React from "react"
 import Image from "next/image"
 
-interface TrustItem {
+export interface TrustItem {
     icon: string;
     title: string;
     description: string;
+}
+
+interface TrustSectionProps {
+    title?: string;
+    items?: TrustItem[]
+    columns?: 2 | 3 | 4
 }
 
 const defaultTrustItems: TrustItem[] = [
@@ -25,18 +31,30 @@ const defaultTrustItems: TrustItem[] = [
     },
 ]
 
-export const TrustSection = () => {
+export const TrustSection:React.FC<TrustSectionProps> = ({
+    title = "Tu Inversión Respaldada y Segura",
+    items = defaultTrustItems,
+    columns = 3,
+}) => {
+    const gridColsClass =
+        columns === 2
+        ? "md:grid-cols-2 max-w-5xl mx-auto"
+        : columns === 4
+        ? "md:grid-cols-2 lg:grid-cols-4"
+        : "md:grid-cols-3"
+
     return (
         <section className="py-14 md:py-20 bg-pale-sky">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
                 {/* titulo */}
                 <h2 className="font-heading text-[22px] leading-[30px] md:text-[32px] md:leading-[40px]
                     font-bold text-night-blue text-center mb-10 md:mb-12">
-                    Tu Inversión Respaldada y Segura
+                    {title}
                 </h2>
                 {/* tarjetas */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-                    {defaultTrustItems.map((item, idx) => (
+                <div className={`grid grid-cols-1 ${gridColsClass} gap-6 lg:gap-8`}>
+                    {items.map((item, idx) => (
                         <div
                             key={idx}
                             className="bg-white rounded-card p-6 md:p-8 border border-border-gray shadow-sm
