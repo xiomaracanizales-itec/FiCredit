@@ -127,7 +127,7 @@ export const navigationData: MainNavTab[] =[
                 href: "/acerca-de/quienes-somos",
                 iconName: "about",
                 items: [
-                    {   title: "Historia", 
+                    {   title: "Historia",
                         href: "/acerca-de/quienes-somos#historia"
                     },
                     {

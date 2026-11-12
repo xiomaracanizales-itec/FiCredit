@@ -38,7 +38,7 @@ export const TrustSection:React.FC<TrustSectionProps> = ({
 }) => {
     const gridColsClass =
         columns === 2
-        ? "md:grid-cols-2 max-w-5xl mx-auto"
+        ? "md:grid-cols-2"
         : columns === 4
         ? "md:grid-cols-2 lg:grid-cols-4"
         : "md:grid-cols-3"
@@ -57,7 +57,7 @@ export const TrustSection:React.FC<TrustSectionProps> = ({
                     {items.map((item, idx) => (
                         <div
                             key={idx}
-                            className="bg-white rounded-card p-6 md:p-8 border border-border-gray shadow-sm
+                            className="bg-white rounded-card p-10 md:p-8 border border-border-gray shadow-sm
                                 text-center flex flex-col items-center hover:shadow-md transition-shadow"
                         >
                             {/* icono */}
@@ -75,7 +75,7 @@ export const TrustSection:React.FC<TrustSectionProps> = ({
                                 {item.title}
                             </h3>
                             {/* descripcion */}
-                            <p className="font-body text-sm text-night-blue/70 leading-relaxed max-w-xs">
+                            <p className="font-body text-sm text-night-blue/70 leading-relaxed max-w-sm">
                                 {item.description}
                             </p>
                         </div>

@@ -25,12 +25,12 @@ const historiaHitos = [
 
 const pilares = [
     { 
-        icon: "/images/iconos/asesoria.png",
+        icon: "/images/iconos/mision.png",
         title: "Nuestra Misión",
         description: "Proveer soluciones financieras integrales, transparentes y competitivas a personas y empresas, respaldados por un talento humano calificado, innovación tecnológica y una gestión prudente del riesgo que garantice la sostenibilidad y el crecimiento de nuestros clientes."
     },
     { 
-        icon: "/images/iconos/asesoria.png",
+        icon: "/images/iconos/vision.png",
         title: "Nuestra Visión",
         description: "Ser la institución financiera de preferencia en Guatemala por nuestra solidez, agilidad en la atención y capacidad de estructurar soluciones a la medida, destacándonos por la excelencia operativa y la estricta transparencia institucional."
     },
@@ -38,23 +38,23 @@ const pilares = [
 
 const valoresFiCredit = [
     { 
-        icon: "/images/iconos/asesoria.png",
+        icon: "/images/iconos/integridad.png",
         title: "Integridad y Transparencia",
         description: "Actuamos con total claridad y apego al marco regulatorio en cada transacción."
     },
     {
-        icon: "/images/iconos/asesoria.png",
+        icon: "/images/iconos/solidez.png",
         title: "Solidez y Prudencia",
         description: "Administramos el capital de nuestros clientes con los más altos estándares de gestión de riesgo."
     },
     {
-        icon: "/images/iconos/asesoria.png",
+        icon: "/images/iconos/agilidad.png",
         title: "Agilidad Orientada al Cliente",
         description: "Simplificamos procesos para responder con rapidez a las necesidades de personas y negocios."
     },
     {
-        icon: "/images/iconos/asesoria.png",
-        title: "Agilidad Orientada al Cliente",
+        icon: "/images/iconos/compromiso.png",
+        title: "Compromiso con el Desarrollo",
         description: "Impulsamos proyectos que generan impacto económico y social positivo en Guatemala."
     }
 ]

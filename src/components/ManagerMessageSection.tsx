@@ -15,16 +15,16 @@ export const ManagerMessageSection: React.FC<ManagerMessageSectionProps> = ({
     imageSrc
 }) => {
     return (
-        <section className="bg-primary text-white py-16 md:py-20 my-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg-px-8">
-                <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-10 text-center md:text-left">
+        <section className="bg-primary text-white py-6 md:py-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="font-heading text-2xl md:text-4xl font-bold text-white mb-10 text-center md:text-left">
                     {title}
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     {/* texto de la cita */}
                     <div className="lg:col-span-8 space-y-6">
-                        <blockquote className="font-heading text-lg md:text-2xl font-medium leading-relaxed text-blue-50">
+                        <blockquote className="font-heading text-lg md:text-xl font-medium leading-relaxed text-blue-50">
                             <span className="text-blue-300/40 text-3xl font-serif mr-2">“</span>
                             {message}
                             <span className="text-blue-300/40 text-3xl font-serif ml-2">”</span>
@@ -36,12 +36,12 @@ export const ManagerMessageSection: React.FC<ManagerMessageSectionProps> = ({
                     </div>
                     {/* foto gerente */}
                     <div className="lg:col-span-4 flex justify-center lg:justify-end">
-                        <div className="w-56 h-72 md:w-64 md:h-80 bg-white rounded-card overflow-hidden shadow-2xl relative 
+                        <div className="w-44 h-56 md:w-48 md:h-60 bg-white rounded-card overflow-hidden shadow-xl relative 
                             flex items-center justify-center border-4 border-white/10">
                                 {imageSrc ? (
                                     <Image
                                         src={imageSrc}
-                                        alt="author"
+                                        alt={author}
                                         fill
                                         className="object-cover"
                                     />
