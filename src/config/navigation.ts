@@ -152,19 +152,19 @@ export const navigationData: MainNavTab[] =[
                 items: [
                     { 
                         title: "Informe Anual", 
-                        href: "/docs/informe-anual.pdf",
+                        href: "/docs/gob-corp/informe-anual.pdf",
                         isPdf: true 
 
                     },
                     { 
                         title: "Manual de Gobierno", 
-                        href: "/docs/manual-gobierno.pdf",
+                        href: "/docs/gob-corp/manual-gobierno.pdf",
                         isPdf: true
 
                     },
                     { 
                         title: "Consejo de Administración", 
-                        href: "/docs/consejo-admin.pdf",
+                        href: "/docs/gob-corp/consejo-admin.png",
                         isPdf: true 
 
                     },
@@ -178,25 +178,25 @@ export const navigationData: MainNavTab[] =[
                 items: [
                     { 
                         title: "Memorias de Labores", 
-                        href: "/acerca-de/docs/memorias",
+                        href: "/docs/transparencia/memoria-labores.pdf",
                         isPdf: true 
 
                     },
                     { 
-                        title: "Regulaciones y Leyes", 
-                        href: "/acerca-de/docs/regulaciones",
+                        title: "Tarifario", 
+                        href: "/docs/transparencia/tarifario.pdf",
                         isPdf: true 
 
                     },
                     { 
-                        title: "Tarifario Ahorro Corriente", 
-                        href: "/acerca-de/docs/tarifario-ahorro-corriente",
+                        title: "Reglamento Depósitos a Plazo Fijo", 
+                        href: "/docs/transparencia/reglamento-depositos-plazo.pdf",
                         isPdf: true  
 
                     },
                     { 
-                        title: "Tarifario Ahorro Fijo", 
-                        href: "/acerca-de/docs/tarifacio-ahorro-fijo",
+                        title: "Reglamento Depósitos de Ahorro", 
+                        href: "/docs/transparencia/reglamento-depositos-ahorro.pdf",
                         isPdf: true  
 
                     }

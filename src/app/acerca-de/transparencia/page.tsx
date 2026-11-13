@@ -4,6 +4,29 @@ import { HeroSection } from "@/components/HeroSection"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { ContactSection } from "@/components/ContactSection"
 import { Footer } from "@/components/Footer"
+import { DocCardsSection } from "@/components/DocCardsSection"
+
+const transparenciaDocs = [
+    { 
+        title: "Tarifario",
+        pdfUrl: "/docs/transparencia/tarifario.pdf"
+    },
+    { 
+        title: "Memoria de Labores",
+        pdfUrl: "/docs/transparencia/memoria-labores.pdf"
+    }
+]
+
+const regulacionesDocs = [
+    { 
+        title: "Reglamento Depósitos a Plazo Fijo",
+        pdfUrl: "/docs/transparencia/reglamento-depositos-plazo.pdf"
+    },
+    { 
+        title: "Reglamento Depósitos de Ahorro",
+        pdfUrl: "/docs/transparencia/reglamento-depositos-ahorro.pdf"
+    }
+]
 
 export default function TransparenciaPage() {
     return(
@@ -34,6 +57,20 @@ export default function TransparenciaPage() {
                     ]}
                     />
                 </div>
+
+                {/* seccion 1 */}
+                <DocCardsSection 
+                    title="Transparencia y Cumplimiento"
+                    subtitle="Acceso a tarifarios oficiales, memorias institucionales y reglamentos de productos de ahorro de FiCredit."
+                    documents={transparenciaDocs}
+                />
+
+                {/* seccion 2 */}
+                <DocCardsSection 
+                    title="Regulaciones y Leyes"
+                    subtitle="Reglamentos oficiales aplicables a las cuentas de depósito de FiCredit."
+                    documents={regulacionesDocs}
+                />
 
                 <ContactSection />
             </main>

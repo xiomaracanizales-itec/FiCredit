@@ -4,6 +4,25 @@ import { HeroSection } from "@/components/HeroSection"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { ContactSection } from "@/components/ContactSection"
 import { Footer } from "@/components/Footer"
+import { DocCardsSection } from "@/components/DocCardsSection"
+
+const politicasDocs = [
+    {
+        title: "Informe Anual de Gobierno Corporativo",
+        pdfUrl: "/docs/gob-corp/informe-anual.pdf"
+    },
+    {
+        title: "Manual de Gobierno Corporativo",
+        pdfUrl: "/docs/gob-corp/manual-gobierno.pdf"
+    }
+]
+
+const consejoDocs = [
+    {
+        title: "Estructura del Consejo de Administración",
+        pdfUrl: "/docs/gob-corp/consejo-admin.png"
+    }
+]
 
 export default function GobiernoCorporativoPage() {
     return(
@@ -34,6 +53,20 @@ export default function GobiernoCorporativoPage() {
                     ]}
                     />
                 </div>
+                
+                {/* seccion 1: politicas */}
+                <DocCardsSection 
+                    title="Políticas de Gobierno Corporativo"
+                    subtitle="Documentos reglamentarios que establecen los principios de dirección, administración y control de la entidad."
+                    documents={politicasDocs}
+                />
+
+                {/* seccion 2: consejo */}
+                <DocCardsSection 
+                    title="Consejo de Administración"
+                    subtitle="Integración y nómina de los miembros del Consejo de Administración responsables de la dirección estratégica de FiCredit."
+                    documents={consejoDocs}
+                />
 
                 <ContactSection />
             </main>
